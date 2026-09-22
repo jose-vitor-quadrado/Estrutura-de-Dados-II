@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int sum(int n) {
+    if (n <= 0) {
+        return 0;
+    }
+    return n + sum(n - 1);
+}
+
+int main() {
+    int n;
+    printf("Digite um numero: ");
+    scanf(" %d", &n);
+    printf("A soma de %d : %d\n", n, sum(n));
+    return 0;
+}
